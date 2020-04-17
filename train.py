@@ -124,20 +124,7 @@ def maddpg(n_episodes=2000, max_t=1000, train_mode=True):
                 torch.save(agent_1.actor_local.state_dict(), 'models/checkpoint_actor_1.pth')
                 torch.save(agent_1.critic_local.state_dict(), 'models/checkpoint_critic_1.pth')
                 break
-            elif ep_best_score >= best_score:
-                print('<-- Best episode so far!\
-                \nEpisode {:0>4d}\tMax Reward: {:.3f}\tMoving Average: {:.3f}'.format(
-                i_episode, ep_best_score, moving_average[-1]))
-                # save weights
-                torch.save(agent_0.actor_local.state_dict(), 'models/checkpoint_actor_0.pth')
-                torch.save(agent_0.critic_local.state_dict(), 'models/checkpoint_critic_0.pth')
-                torch.save(agent_1.actor_local.state_dict(), 'models/checkpoint_actor_1.pth')
-                torch.save(agent_1.critic_local.state_dict(), 'models/checkpoint_critic_1.pth')
-                
-            elif (i_episode-best_episode) >= 50:
-                # stop training if model stops converging
-                print('<-- Training stopped. Best score not matched or exceeded for 200 episodes')
-                break
+
             else:
                 continue
             
