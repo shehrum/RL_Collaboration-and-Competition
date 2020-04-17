@@ -60,3 +60,5 @@ Use the `requirements.txt` to install the required dependencies.
 
 pip install -r requirements.txt
 
+### References
+1. MADDPG paper: https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf
