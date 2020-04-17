@@ -40,7 +40,7 @@ The environment is considered solved when the average (over 100 episodes) of tho
 ### Instructions
 You can run the code using the following command in your terminal:
 
-```$ python train.py
+```python train.py
 ```
 
 This will start your model training, and save the results and the trained model.
@@ -50,7 +50,7 @@ The file `maddpg_agent.py` contains the code for the agent, and the `model.py` c
 ### Results
 The environment gets solved in 672 episodes
 
-![score](results/scores.png)
+![score](results/score.png)
 
 
 ### Dependencies
