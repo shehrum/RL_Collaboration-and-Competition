@@ -37,6 +37,12 @@ The environment is considered solved when the average (over 100 episodes) of tho
 
 2. Place the file `RL_Collaboration-and-competition/` folder, and unzip (or decompress) the file.
 
+### Dependencies
+Use the `requirements.txt` to install the required dependencies. 
+```
+pip install -r requirements.txt
+```
+
 ### Instructions
 You can run the code using the following command in your terminal:
 
@@ -54,11 +60,6 @@ The environment gets solved in 672 episodes
 
 ![score](results/score.png)
 
-
-### Dependencies
-Use the `requirements.txt` to install the required dependencies. 
-
-pip install -r requirements.txt
 
 ### References
 1. MADDPG paper: https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf
