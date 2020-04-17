@@ -40,7 +40,9 @@ The environment is considered solved when the average (over 100 episodes) of tho
 ### Instructions
 You can run the code using the following command in your terminal:
 
-```python train.py
+```
+python train.py
+
 ```
 
 This will start your model training, and save the results and the trained model.
