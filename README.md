@@ -50,7 +50,7 @@ The file `maddpg_agent.py` contains the code for the agent, and the `model.py` c
 ### Results
 The environment gets solved in 672 episodes
 
-![score](/results/scores.png)
+![score](results/scores.png)
 
 
 ### Dependencies
